@@ -1,0 +1,142 @@
+{
+  "common": {
+    "appName": "Oneiro",
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "insufficientTokens": "Insufficient tokens! Please purchase tokens."
+  },
+  "profile": {
+    "title": "Profile",
+    "userTitle": "Dream Explorer",
+    "currentTokens": "Your Current Tokens",
+    "buyTokens": "Buy Tokens",
+    "membershipPlans": "Membership Plans",
+    "recommended": "Recommended",
+    "selectPlan": "Select Plan",
+    "selectedPlan": "Selected Plan",
+    "planDeselected": "{{name}} plan selection removed",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "language": "Language",
+    "privacy": "Privacy",
+    "logout": "Logout",
+    "on": "On",
+    "off": "Off"
+  },
+  "plans": {
+    "basic": "Basic",
+    "middle": "Middle",
+    "premium": "Premium",
+    "tokens": "Tokens",
+    "tokensCount": "{{count}} Tokens",
+    "basicFeatures": "Basic analyses",
+    "dailyLimit": "Daily limit",
+    "dailyLimitCount": "Daily limit: {{count}}",
+    "allAnalyses": "All analyses",
+    "prioritySupport": "Priority support",
+    "unlimitedAnalyses": "Unlimited analyses",
+    "specialReports": "Special reports",
+    "planSelected": "{{name}} plan selected. Redirecting to payment page...",
+    "freePlan": "Free"
+  },
+  "home": {
+    "hero": {
+      "title": "Oneiro",
+      "subtitle": "Analyze your dream symbols, discover your lucky numbers.",
+      "badge": "Numerology • Astrology"
+    },
+    "services": "Services",
+    "dailyFortune": "Your Daily Cosmic Energy"
+  },
+  "navigation": {
+    "home": "Home",
+    "analyze": "Analyze",
+    "history": "History",
+    "dreams": "Dreams",
+    "profile": "Profile"
+  },
+  "analysis": {
+    "scanSymbols": "Scanning dream symbols",
+    "calcNumerology": "Calculating numerological correspondences",
+    "checkAstro": "Checking star chart",
+    "analyzeFreq": "Analyzing cosmic frequencies",
+    "generateNumbers": "Determining lucky numbers",
+    "completed": "Analysis Completed",
+    "dreamSummary": "Dream Summary",
+    "newAnalysis": "New Dream Analysis",
+    "defaultInterpretation": "The symbols in your dream carry strong cosmic energies. The images seen are interpreted as signs of abundance and prosperity. Universal frequencies are working in your favor during this period. Remember that you are at the peak of your luck today.",
+    "processing": "Cosmic algorithms running"
+  },
+  "dailyFortune": {
+    "title": "Your Daily Cosmic Energy",
+    "description": "Today the stars are shining for you. Your luck energy is high.",
+    "energy": "Energy",
+    "detailedAnalysis": "Detailed Analysis"
+  },
+  "history": {
+    "title": "History",
+    "description": "You can view all your analyses here",
+    "noAnalyses": "You don't have any analyses yet",
+    "recentAnalyses": "Your Recent Analyses"
+  },
+  "serviceInput": {
+    "dreamDescription": "Tell us your dream out loud, let's analyze it",
+    "compatibilityDescription": "Enter two people's information to analyze compatibility",
+    "compatibilityButton": "Analyze Compatibility"
+  },
+  "voiceRecorder": {
+    "listening": "Listening to your dream...",
+    "starting": "Starting cosmic analysis...",
+    "tapToRecord": "Tap the microphone to tell your dream"
+  },
+  "results": {
+    "shareResults": "Share Results"
+  },
+  "footer": {
+    "text": "Oneiro v1.0 • Your Mystic Guide"
+  },
+  "services": {
+    "dream": {
+      "title": "Dream Interpretation",
+      "description": "Analyze your dreams, discover hidden messages and lucky numbers."
+    },
+    "numerology": {
+      "title": "Numerology",
+      "description": "Discover the cosmic meaning of your birth date and name, learn your personal numbers."
+    },
+    "coffee": {
+      "title": "Coffee Fortune",
+      "description": "Upload your cup, read the symbols and discover your future."
+    },
+    "tarot": {
+      "title": "Tarot Reading",
+      "description": "Discover your past, present and future with digital tarot cards."
+    },
+    "lottery": {
+      "title": "Luck Prediction",
+      "description": "Lucky combinations for lottery, super lottery and ten numbers according to your personal energy."
+    },
+    "compatibility": {
+      "title": "Compatibility Analysis",
+      "description": "Discover the energy compatibility and relationship potential between two people."
+    },
+    "popular": "Popular",
+    "premium": "Premium"
+  },
+  "time": {
+    "hoursAgo": "{{count}} hours ago",
+    "daysAgo": "{{count}} days ago",
+    "weeksAgo": "{{count}} weeks ago",
+    "monthsAgo": "{{count}} months ago"
+  },
+  "analyses": {
+    "dreamPreview": "Fish you saw while swimming in the sea...",
+    "coffeePreview": "The horse figure in the cup new beginnings...",
+    "numerologyPreview": "Your birth date carries the energy of number 8..."
+  }
+}

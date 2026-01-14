@@ -1,0 +1,142 @@
+{
+  "common": {
+    "appName": "Oneiro",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "back": "Geri",
+    "next": "İleri",
+    "close": "Kapat",
+    "insufficientTokens": "Yetersiz jeton! Lütfen jeton satın alın."
+  },
+  "profile": {
+    "title": "Profil",
+    "userTitle": "Rüya Gezgini",
+    "currentTokens": "Mevcut Jetonlarınız",
+    "buyTokens": "Jeton Al",
+    "membershipPlans": "Üyelik Paketleri",
+    "recommended": "Önerilen",
+    "selectPlan": "Paketi Seç",
+    "selectedPlan": "Seçilen Paket",
+    "planDeselected": "{{name}} paketi seçimi kaldırıldı",
+    "settings": "Ayarlar",
+    "notifications": "Bildirimler",
+    "language": "Dil",
+    "privacy": "Gizlilik",
+    "logout": "Hesaptan Çıkış",
+    "on": "Açık",
+    "off": "Kapalı"
+  },
+  "plans": {
+    "basic": "Basic",
+    "middle": "Orta",
+    "premium": "Premium",
+    "tokens": "Jeton",
+    "tokensCount": "{{count}} Jeton",
+    "basicFeatures": "Temel analizler",
+    "dailyLimit": "Günlük limit",
+    "dailyLimitCount": "Günlük limit: {{count}}",
+    "allAnalyses": "Tüm analizler",
+    "prioritySupport": "Öncelikli destek",
+    "unlimitedAnalyses": "Sınırsız analiz",
+    "specialReports": "Özel raporlar",
+    "planSelected": "{{name}} paketi seçildi. Ödeme sayfasına yönlendiriliyorsunuz...",
+    "freePlan": "Ücretsiz"
+  },
+  "home": {
+    "hero": {
+      "title": "Oneiro",
+      "subtitle": "Rüya sembollerinizi analiz edin, şanslı numaralarınızı keşfedin.",
+      "badge": "Numeroloji • Astroloji"
+    },
+    "services": "Hizmetler",
+    "dailyFortune": "Günlük Kozmik Enerjiniz"
+  },
+  "navigation": {
+    "home": "Anasayfa",
+    "analyze": "Analiz Et",
+    "history": "Geçmiş",
+    "dreams": "Rüyalar",
+    "profile": "Profil"
+  },
+  "analysis": {
+    "scanSymbols": "Rüya sembolleri taranıyor",
+    "calcNumerology": "Numerolojik karşılıklar hesaplanıyor",
+    "checkAstro": "Yıldız haritası kontrol ediliyor",
+    "analyzeFreq": "Kozmik frekanslar analiz ediliyor",
+    "generateNumbers": "Şanslı numaralar belirleniyor",
+    "completed": "Analiz Tamamlandı",
+    "dreamSummary": "Rüya Özeti",
+    "newAnalysis": "Yeni Rüya Analizi",
+    "defaultInterpretation": "Rüyanızdaki semboller güçlü kozmik enerjiler taşıyor. Görülen imgeler, bolluk ve bereket işareti olarak yorumlanmaktadır. Evrensel frekanslar bu dönemde sizin lehinize çalışıyor. Bugün şansınızın zirvesinde olduğunuzu unutmayın.",
+    "processing": "Kozmik algoritmalar çalışıyor"
+  },
+  "dailyFortune": {
+    "title": "Günlük Kozmik Enerjiniz",
+    "description": "Bugün yıldızlar sizin için parlıyor. Şans enerjiniz yüksek.",
+    "energy": "Enerji",
+    "detailedAnalysis": "Detaylı Analiz"
+  },
+  "history": {
+    "title": "Geçmiş",
+    "description": "Tüm analizlerinizi buradan görüntüleyebilirsiniz",
+    "noAnalyses": "Henüz bir analiziniz yok",
+    "recentAnalyses": "Son Analizleriniz"
+  },
+  "serviceInput": {
+    "dreamDescription": "Rüyanızı sesli olarak anlatın, analiz edelim",
+    "compatibilityDescription": "İki kişinin bilgilerini girerek uyumu analiz edin",
+    "compatibilityButton": "Uyum Analizi Yap"
+  },
+  "voiceRecorder": {
+    "listening": "Rüyanızı dinliyorum...",
+    "starting": "Kozmik analiz başlatılıyor...",
+    "tapToRecord": "Mikrofona dokunarak rüyanızı anlatın"
+  },
+  "results": {
+    "shareResults": "Sonuçları Paylaş"
+  },
+  "footer": {
+    "text": "Oneiro v1.0 • Mistik Rehberiniz"
+  },
+  "services": {
+    "dream": {
+      "title": "Rüya Yorumu",
+      "description": "Rüyalarınızı analiz edin, gizli mesajları ve şanslı numaraları keşfedin."
+    },
+    "numerology": {
+      "title": "Numeroloji",
+      "description": "Doğum tarihinizin ve isminizin kozmik anlamını keşfedin, kişisel numaralarınızı öğrenin."
+    },
+    "coffee": {
+      "title": "Kahve Falı",
+      "description": "Fincanınızı yükleyin, sembolleri okuyun ve geleceğinizi keşfedin."
+    },
+    "tarot": {
+      "title": "Tarot Falı",
+      "description": "Dijital tarot kartları ile geçmiş, şimdi ve geleceğinizi keşfedin."
+    },
+    "lottery": {
+      "title": "Şans Tahmini",
+      "description": "Kişisel enerjinize göre loto, süper loto ve on numara için şanslı kombinasyonlar."
+    },
+    "compatibility": {
+      "title": "Uyum Analizi",
+      "description": "İki kişi arasındaki enerji uyumunu ve ilişki potansiyelini keşfedin."
+    },
+    "popular": "Popüler",
+    "premium": "Premium"
+  },
+  "time": {
+    "hoursAgo": "{{count}} saat önce",
+    "daysAgo": "{{count}} gün önce",
+    "weeksAgo": "{{count}} hafta önce",
+    "monthsAgo": "{{count}} ay önce"
+  },
+  "analyses": {
+    "dreamPreview": "Denizde yüzerken gördüğün balıklar...",
+    "coffeePreview": "Fincandaki at figürü yeni başlangıçları...",
+    "numerologyPreview": "Doğum tarihiniz 8 sayısının enerjisini..."
+  }
+}

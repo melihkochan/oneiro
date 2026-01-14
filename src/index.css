@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Mystical Dark Theme */
+    --background: 232 40% 6%;
+    --foreground: 45 30% 90%;
+
+    --card: 232 35% 10%;
+    --card-foreground: 45 30% 90%;
+
+    --popover: 232 35% 10%;
+    --popover-foreground: 45 30% 90%;
+
+    --primary: 45 80% 55%;
+    --primary-foreground: 232 40% 6%;
+
+    --secondary: 260 45% 25%;
+    --secondary-foreground: 45 30% 90%;
+
+    --muted: 232 30% 15%;
+    --muted-foreground: 232 20% 55%;
+
+    --accent: 280 60% 40%;
+    --accent-foreground: 45 30% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 232 30% 18%;
+    --input: 232 30% 18%;
+    --ring: 45 80% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom Mystical Colors */
+    --cosmic-purple: 260 60% 20%;
+    --deep-night: 232 50% 8%;
+    --gold-shimmer: 45 85% 60%;
+    --gold-glow: 45 90% 70%;
+    --mystic-blue: 220 60% 35%;
+    --aurora-teal: 175 50% 40%;
+    --star-white: 45 20% 95%;
+
+    /* Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(260 60% 15%) 0%, hsl(232 50% 8%) 50%, hsl(280 50% 12%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 50%) 0%, hsl(35 90% 60%) 50%, hsl(45 85% 55%) 100%);
+    --gradient-aurora: linear-gradient(180deg, hsl(260 50% 20%) 0%, hsl(220 60% 25%) 50%, hsl(175 40% 30%) 100%);
+    --gradient-radial-glow: radial-gradient(ellipse at center, hsl(45 80% 55% / 0.15) 0%, transparent 70%);
+    
+    /* Shadows */
+    --shadow-gold: 0 0 30px hsl(45 80% 55% / 0.3);
+    --shadow-cosmic: 0 20px 60px hsl(260 60% 10% / 0.8);
+    --shadow-inner-glow: inset 0 0 60px hsl(45 80% 55% / 0.05);
+
+    --sidebar-background: 232 40% 8%;
+    --sidebar-foreground: 45 30% 90%;
+    --sidebar-primary: 45 80% 55%;
+    --sidebar-primary-foreground: 232 40% 6%;
+    --sidebar-accent: 260 45% 25%;
+    --sidebar-accent-foreground: 45 30% 90%;
+    --sidebar-border: 232 30% 18%;
+    --sidebar-ring: 45 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    background: hsl(var(--background));
+    min-height: 100vh;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .text-gold-shimmer {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-cosmic {
+    background: var(--gradient-cosmic);
+  }
+
+  .bg-aurora {
+    background: var(--gradient-aurora);
+  }
+
+  .glow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .glow-cosmic {
+    box-shadow: var(--shadow-cosmic);
+  }
+
+  .inner-glow {
+    box-shadow: var(--shadow-inner-glow);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .mystical-border {
+    border: 1px solid hsl(var(--gold-shimmer) / 0.3);
+    position: relative;
+  }
+
+  .mystical-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, hsl(45 80% 55% / 0.5), transparent, hsl(45 80% 55% / 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  /* Safe area for mobile (iOS notch, Android nav bar) */
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0.5rem);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
+  }
+
+  .safe-area-inset {
+    padding-bottom: calc(env(safe-area-inset-bottom, 0) + 6rem);
+  }
+
+  /* Hide scrollbar for horizontal scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  .animate-orbit {
+    animation: orbit 15s linear infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { 
+      opacity: 0.5;
+      box-shadow: 0 0 20px hsl(45 80% 55% / 0.3);
+    }
+    50% { 
+      opacity: 1;
+      box-shadow: 0 0 40px hsl(45 80% 55% / 0.6);
+    }
+  }
+
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+  }
+
+  @keyframes shimmer {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+
+  .star-field {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, hsl(45 80% 80%), transparent),
+      radial-gradient(2px 2px at 40px 70px, hsl(45 60% 70%), transparent),
+      radial-gradient(1px 1px at 90px 40px, hsl(45 80% 90%), transparent),
+      radial-gradient(2px 2px at 130px 80px, hsl(45 70% 75%), transparent),
+      radial-gradient(1px 1px at 160px 30px, hsl(45 80% 85%), transparent);
+    background-size: 200px 100px;
+    animation: twinkle 4s ease-in-out infinite;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+}
